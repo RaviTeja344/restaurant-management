@@ -8,7 +8,7 @@ function Login(props) {
  
   // handle button click of login form
   const handleLogin = async () => {
-    await fetch("https://xc5r8648w5.execute-api.us-east-2.amazonaws.com/prod/auth", {
+    await fetch("https://etdcicawof.execute-api.us-east-1.amazonaws.com/test", {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'no-cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
