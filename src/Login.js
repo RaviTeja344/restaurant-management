@@ -8,7 +8,7 @@ function Login(props) {
  
   // handle button click of login form
   const handleLogin = async () => {
-    await fetch("https://etdcicawof.execute-api.us-east-1.amazonaws.com/test", {
+    await fetch("https://j7xac0cmxg.execute-api.us-east-1.amazonaws.com/auth", {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'no-cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -22,16 +22,11 @@ function Login(props) {
             referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
             body: JSON.stringify({username: username.value, password: password.value}) // body data type must match "Content-Type" header
           })
-        .then(res => res.json())
         .then(res => {
-            console.log(res);
-            if(res.authenticated) {
+            console.log(res)
               setError('');
               sessionStorage.setItem('userDetails', JSON.stringify(res.userDetails));
               props.history.push('/home');
-            } else {
-              setError('Username/Password is invalid');
-            }
         });
     
   }
