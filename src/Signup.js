@@ -58,6 +58,7 @@ function Signup(props) {
       <button type="button" onClick={handleSignup}>Submit</button>
       <br />
       <br />
+      <p> Already Member?</p>
       <button type="button" style={{backgroundColor: "#008CBA"}} onClick={handleLog}>Log-in</button>
     </div>
   );
