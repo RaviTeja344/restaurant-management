@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, NavLink, Redirect } from 'react-router-do
  
 import Login from './Login';
 import Home from './Home';
+import Signup from './Signup';
  
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
           </div> */}
           <div className="content">
             <Switch>
-              <Redirect exact path="/" to="login" />
+              <Redirect exact path="/" to="signup" />
               <Route path="/login" component={Login} />
               <Route path="/home" component={Home} />
+              <Route path="/signup" component={Signup}/>
             </Switch>
           </div>
         </div>
