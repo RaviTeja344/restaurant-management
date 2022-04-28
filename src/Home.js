@@ -70,7 +70,7 @@ function Home(props) {
         {
             menuItems.length ? 
             <>
-                <div className="welcome-banner"><h3>Welcome to the Cloud Restaurant!</h3> <a href="javascript:void(0)" onClick={logout}>Logout</a></div>
+                <div className="welcome-banner"><h3>Welcome to the Cloud  Computing Restaurant!</h3> <a href="javascript:void(0)" onClick={logout}>Logout</a></div>
                 <br></br>
                 <Menu items={menuItems} role={role} addItem={addItem} editItem={editItem} deleteItem={deleteItem} />
             </> : 'Loading...'
