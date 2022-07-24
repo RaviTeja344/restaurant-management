@@ -28,7 +28,7 @@ function Home(props) {
     }, []);
 
     const getItems = async () => {
-        await fetch("https://0ob4ux1xd6.execute-api.us-east-1.amazonaws.com/BetaTest/")
+        await fetch("https://xrd6ufie2i.execute-api.us-east-2.amazonaws.com/dev/menu")
         .then(getResp => getResp.json())
         .then(getResp => {
             setMenuItems(getResp);
@@ -36,7 +36,7 @@ function Home(props) {
     }
 
     const postItem = async (item)  => {
-        await fetch("https://odu8tdkp0a.execute-api.us-east-1.amazonaws.com/menu", {
+        await fetch("https://j0h3mkocah.execute-api.us-east-2.amazonaws.com/dev/menu", {
           method: 'POST', 
           body: JSON.stringify(item)
         });
@@ -52,7 +52,7 @@ function Home(props) {
     }
 
     const deleteItem = async (item) => {
-        await fetch("https://lfe27d7foa.execute-api.us-east-1.amazonaws.com/delete/" + item.id, {
+        await fetch("https://gbqqzxid1j.execute-api.us-east-2.amazonaws.com/dev/delete/" + item.id, {
             method: 'DELETE', 
           })
         getItems();
