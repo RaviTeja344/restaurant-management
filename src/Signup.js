@@ -9,7 +9,7 @@ function Signup(props) {
  
   const data = async ()  => {
     if (password.value === repassword.value){
-        const got = await fetch("https://foui7p2pii.execute-api.us-east-1.amazonaws.com/signup", {
+        const got = await fetch("https://w6irbgb6a8.execute-api.us-east-2.amazonaws.com/test/signup", {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         body: JSON.stringify({username: username.value, password: password.value}) // body data type must match "Content-Type" header
         });
