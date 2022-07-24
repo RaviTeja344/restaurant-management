@@ -7,7 +7,7 @@ function Login(props) {
   const [loading, setLoading] = useState(false);
  
   const data = async ()  => {
-    const got = await fetch("https://j7xac0cmxg.execute-api.us-east-1.amazonaws.com/auth", {
+    const got = await fetch("https://9u05myysj2.execute-api.us-east-2.amazonaws.com/dev/login", {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       body: JSON.stringify({username: username.value, password: password.value}) // body data type must match "Content-Type" header
     });
