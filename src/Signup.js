@@ -43,7 +43,7 @@ function Signup(props) {
       <div className="title">Signup</div>
       <br /><br />
       <div>
-        Usernameeee<br />
+        Username<br />
         <input type="text" {...username} autoComplete="new-password" />
       </div>
       <div style={{ marginTop: 10 }}>
